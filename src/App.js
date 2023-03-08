@@ -53,7 +53,8 @@ const App = () => {
 
   const handleResizeStart = (index, e) => {
     console.log('e', e.direction);
-    // Check if the resize is coming from the left handle
+    // Check if the resize is coming from the left handles
+    // eslint-disable-next-line no-unused-vars
     const [handlePosX, handlePosY] = e.direction;
     // 0 => center
     // -1 => top or left
@@ -65,7 +66,9 @@ const App = () => {
     if (handlePosX === -1) {
       console.log('width', moveableComponents, e);
       // Save the initial left and width values of the moveable component
+      // eslint-disable-next-line no-unused-vars
       const initialLeft = e.left;
+      // eslint-disable-next-line no-unused-vars
       const initialWidth = e.width;
 
       // Set up the onResize event handler to update the left value based on the change in width
